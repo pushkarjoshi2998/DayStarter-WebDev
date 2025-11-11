@@ -1,0 +1,17 @@
+body{
+    background-color: lightblue;
+}
+td{
+    border: 2px solid black;
+}
+caption{
+    background-color: gold
+}
+
+#a10{
+    color: brown;
+}
+
+.a1{
+    color: gold;
+}
