@@ -19,3 +19,20 @@ caption{
 .b2{
     background-color: beige;
 }
+
+a:hover{
+    color: rgb(240, 10, 168);
+}
+
+a{
+    color:yellow;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid cyan;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+form{
+    margin: 10px;
+}
