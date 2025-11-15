@@ -1,31 +1,36 @@
-body{
+/* inline style(1000)> id selector(100)> class or attribute selector(10)> element selector and psuedo selector(1)> universal selector(0). */
+/* refer also complex specificity addition rules like h1.yellow etc */
+
+body {
     background-color: lightblue;
 }
-td{
+
+td {
     border: 2px solid black;
 }
-caption{
+
+caption {
     background-color: gold
 }
 
-#a10{
+#a10 {
     color: brown;
 }
 
-.a1{
-    color: gold;
+.a1 {
+    color: gold !important;
 }
 
-.b2{
+.b2 {
     background-color: beige;
 }
 
-a:hover{
+a:hover {
     color: rgb(240, 10, 168);
 }
 
-a{
-    color:yellow;
+a {
+    color: yellow;
     padding: 10px;
     margin: 5px;
     border: 2px solid cyan;
@@ -33,6 +38,18 @@ a{
     box-sizing: border-box;
 }
 
-form{
+form {
     margin: 10px;
+    font-family: 'Poppins';
+    /* font-style: italic; */
+    /* line-height: 4; */
+    /* letter-spacing: 50px; */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+div p:first-child {
+    background-color: yellow;
+    color: red;
+    word-break: break-all;
 }
