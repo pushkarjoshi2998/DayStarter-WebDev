@@ -1,6 +1,13 @@
 /* inline style(1000)> id selector(100)> class or attribute selector(10)> element selector and psuedo selector(1)> universal selector(0). */
 /* refer also complex specificity addition rules like h1.yellow etc */
 
+/* Exception: transform, filter or perspective properties can also make an element appear as positioned(related to absolute) */
+
+html {
+    overflow: auto;
+    /* overflow: auto hidden */
+}
+
 body {
     background-color: lightblue;
 }
@@ -34,8 +41,14 @@ a {
     padding: 10px;
     margin: 5px;
     border: 2px solid cyan;
-    height: 100px;
     box-sizing: border-box;
+    position: fixed;
+}
+
+.main{
+    padding: 6px;
+    position: absolute;
+    border: 3px solid burlywood ;
 }
 
 form {
@@ -46,10 +59,38 @@ form {
     /* letter-spacing: 50px; */
     text-transform: uppercase;
     text-align: center;
+    width: 100vw;
+    box-shadow: 10px 8px 11px 11px #000;
+    text-shadow: 10px 5px 15px #000;
 }
 
 div p:first-child {
     background-color: yellow;
     color: red;
     word-break: break-all;
+}
+
+div {
+    display: inline;
+}
+
+.lol {
+    visibility: hidden
+}
+
+.demn{
+    position: sticky;
+    top: 0px;
+    border: 5px solid gold;
+    background-color: whitesmoke;
+}
+
+ol {
+    list-style: inside url("https://imgs.search.brave.com/0Q895mStz5lX83C_LuCt8X5aYZWtIi-2T77jBGcqUAs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaWNvbi1pY29u/cy5jb20vMzg4MS9Q/TkcvOTYvZWxkZW5f/cmluZ19pY29uXzI0/NTU3MC5wbmc");
+}
+
+audio{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }
