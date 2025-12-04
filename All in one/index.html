@@ -11,6 +11,39 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
 
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: rgb(223, 169, 178);
+            }
+
+            /* .flex {
+                flex-direction: column;
+            } */
+        }
+
+        .H div {
+            background-color: blueviolet;
+            /* margin: 5px; */
+            padding: 10px;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .H {
+            display: flex;
+            border: 3px solid black;
+            /* width: fit-content; */
+            /* justify-content: center; */
+            height: 300px;
+            justify-content: space-around;
+            /* align-items: center; one line*/
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            align-content: center; /*multiple lines*/
+            gap: 30px;
+            flex-grow: 1;
+        }
+
         form {
             background-color: bisque;
         }
@@ -18,24 +51,48 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="flex">
         <div class="lol">Lol</div>
         <p class="demn">lol</p>
-        <a href="https://www.google.com">Google</a>
-        <form action="post" style="padding: 20px;">
+        <div class="H">
+            <div style="order: -2;">T</div>
+            <div style="order: -1;">O</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+            <div>H</div>
+        </div>
+        <a href="https://www.google.com" style="text-decoration: none;">Google</a>
+        <form action="post" style="padding: 20px; ">
             <div style="color: blueviolet;">
                 <label for="username">Enter name</label>
                 <input type="text" id="username" name="username" placeholder="Enter ur name" required autofocus>
             </div>
             <div>
                 <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label>
+                <label for="female">Male</label>
+                <!-- "for" uk wht it does  -->
                 <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
+                <label for="male">Female</label>
             </div>
             <div>
-                <textarea name="Daily" id="" rows="4" cols="50">How are you feeling today?
-            </textarea>
+                <textarea name="Daily" id="" rows="4" cols="50">How are you feeling today?</textarea>
             </div>
             <div>
                 <label for="daily">How are you feeling today?</label>
